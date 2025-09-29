@@ -25,7 +25,7 @@ Repo: https://github.com/your/repo
 `yarn test` or `npm test`
 
 ## Choices
-**UI Framework – ShadCN/UI**  
+- **UI Framework – ShadCN/UI**  
   Used for building accessible, modern, and consistent UI components quickly.  
   Tailwind integration ensures faster development with a clean design system.
 
