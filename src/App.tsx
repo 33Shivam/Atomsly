@@ -4,10 +4,6 @@ import { columns } from "./columns";
 import type { Launches } from "./columns";
 import { DataTable } from "./data-table";
 import { SiteHeader } from "./site-header";
-// import { YearPicker } from "./components/ui/year-picker";
-import { Calendar } from "./components/ui/calendar";
-import React from "react";
-import { YearPicker } from "./components/ui/year-picker";
 
 const API_URL = "https://api.spacexdata.com/v4/launches";
 

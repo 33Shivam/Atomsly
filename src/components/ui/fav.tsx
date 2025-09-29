@@ -1,6 +1,4 @@
 "use client";
-
-import * as React from "react";
 import { useLocalStorage } from "@uidotdev/usehooks";
 import { Heart, HeartCrack } from "lucide-react"; // Lucide icons
 

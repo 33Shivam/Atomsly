@@ -49,29 +49,6 @@ export function DataTable<TData extends HasId, TValue>({
     state: { columnFilters },
   });
 
-  React.useEffect(() => {
-    // Step 1: check if favorites exists
-    const stored = localStorage.getItem("favorites");
-
-    if (!stored) {
-      // Step 2: extract ids
-      const ids = data
-        .map((item) => item.id)
-        .filter((id): id is string => Boolean(id));
-
-      // Step 3: create Set
-      const favSet = new Set<string>();
-      ids.forEach((id) => favSet.add(id));
-
-      // Step 4: save to localStorage
-      localStorage.setItem("favorites", JSON.stringify(Array.from(favSet)));
-
-      console.log("Initialized favorites with IDs:", Array.from(favSet));
-    } else {
-      console.log("Favorites already exist:", JSON.parse(stored));
-    }
-  }, []);
-
   return (
     <div>
       <div className="flex items-center py-4 justify-between">
