@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <SiteHeader />
-      <div className="border rounded-lg p-6 mt-4 ml-8 mr-8 mb-4">
+      <div className="bg-neutral-100 dark:bg-neutral-900 min-h-screen pl-16 pr-16 ">
         <DataTable columns={columns} data={launches} />
       </div>
     </>

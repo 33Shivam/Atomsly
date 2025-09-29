@@ -17,7 +17,6 @@ import {
 export function YearPicker({
   fromYear = 2006,
   toYear = 2025,
-  value,
   onChange,
 }: {
   fromYear?: number;
@@ -25,7 +24,7 @@ export function YearPicker({
   value?: string;
   onChange?: (year: string) => void;
 }) {
-  const [year, setYear] = React.useState(value ?? toYear.toString());
+  const [year, setYear] = React.useState("");
 
   const years = Array.from({ length: toYear - fromYear + 1 }, (_, i) =>
     (fromYear + i).toString()
@@ -36,6 +35,7 @@ export function YearPicker({
       <DropdownMenuTrigger asChild>
         <Button variant="outline">
           <Calendar />
+          <span>{year == "" ? "All Years" : year}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">

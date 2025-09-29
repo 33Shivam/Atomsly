@@ -10,8 +10,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import { ExternalLink } from "lucide-react";
-
 interface Links {
   patch?: { small?: string | null; large?: string | null };
   reddit?: {
@@ -35,9 +33,7 @@ export function DetailsDialog({ details, links }: DetailsDialogProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant={"ghost"} size="sm">
-          <ExternalLink />
-        </Button>
+        <h3 className="text-blue-600 underline text-sm">View Details</h3>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>

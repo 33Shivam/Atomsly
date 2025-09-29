@@ -4,10 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  font-family: monospace, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  text-transform: uppercase;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #212121;
@@ -50,14 +49,7 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0px;
@@ -67,10 +59,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+
 
 
 
@@ -167,4 +156,11 @@ h1 {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+a{
+
+}
+a:hover {
+ cursor: pointer;
 }
