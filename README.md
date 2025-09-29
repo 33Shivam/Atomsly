@@ -24,7 +24,17 @@ Repo: https://github.com/your/repo
 ## Tests
 `yarn test` or `npm test`
 
-## Choices & tradeoffs
-- Used SpaceX `/launches` endpoint for client-side-filtering and pagination using tanstack tables.
-- Favorites persisted in `localStorage` (simple, no backend).
-- Modal implemented as accessible dialog with focus trap.
+## Choices
+**UI Framework – ShadCN/UI**  
+  Used for building accessible, modern, and consistent UI components quickly.  
+  Tailwind integration ensures faster development with a clean design system.
+
+- **Filtering – TanStack Table**  
+  Leveraged for robust filtering/sorting features.  
+  Enabled search, year filter, and success toggle with reactive updates.  
+  Scales better than manual list filtering.
+
+- **Favorites Persistence – LocalStorage + Set**  
+  Favorites are stored in browser `localStorage` to persist across reloads.  
+  Implemented with JavaScript `Set` for **O(1) lookups** and faster retrieval compared to arrays.  
+  Keeps logic simple without needing a backend.
