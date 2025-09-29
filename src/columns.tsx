@@ -2,7 +2,6 @@
 import type { ColumnDef } from "@tanstack/react-table";
 import { DetailsDialog } from "./dialog";
 import { Badge } from "./components/ui/badge";
-import { YearPicker } from "./components/ui/year-picker";
 import FavoriteIcon from "./components/ui/fav";
 
 interface Links {
